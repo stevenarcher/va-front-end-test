@@ -1,0 +1,94 @@
+
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 68%;
+  max-width: 68%;
+}
+
+.detail {
+  padding: 0 24px;
+  flex: 0 1 49%;
+  max-width: 49%;
+  justify-content: flex-start;
+}
+
+.location {
+  font-size: 1.4rem;
+  margin-right: 12px;
+  color: var(--token-color-colour-text-secondary);
+}
+
+.boardBasis {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.action {
+  justify-content: flex-end;
+  flex: 0 1 51%;
+  max-width: 51%;
+  background: var(--token-color-colour-background-secondary);
+  padding: 24px 16px;
+}
+
+.card {
+  display: flex;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .2);
+  background-color: #fff;
+  color: #333;
+  border: solid 1px #d9d9d9;
+  margin: 0 9px 16px;
+}
+
+.list {
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  display: block;
+
+
+  & li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    list-style: none;
+
+    &::before {
+      content: "\2022";
+      font-size: 2rem;
+      position: absolute;
+      top: 1px;
+      left: 0;
+      color: var(--token-color-colour-brand-red);
+    }
+  }
+}
+
+.image {
+  max-width: 32%;
+  height: auto;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  object-position: top;
+}
+
+.price {
+  font-size: 3.2rem;
+  &::before {
+    content: attr(data-was-price);
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    text-decoration: line-through;
+    color: var(--token-color-colour-brand-red);
+  }
+  &::after {
+    content: "pp";
+    font-size: 1.6rem;
+    speak: none;
+  }
+}
