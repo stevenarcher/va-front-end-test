@@ -23,7 +23,7 @@ export const hotelFacilities = [
   'Valet parking',
 ] as const;
 
-export const hotelRatings = ['5+', '5', '4+', '4', '3+', '3', 'Villa'] as const;
+export const hotelRatings = ['5+', '5', '4+', '4', '3+', '3', 'NA'] as const;
 export const hotelPriceGroups = [
   'up to £1340',
   '£1340 - £1530',
