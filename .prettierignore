@@ -1,0 +1,12 @@
+# Generated Output
+/dist
+/coverage
+/reports
+build
+.next
+
+
+# Mocks
+__mocks__
+__pact__
+
